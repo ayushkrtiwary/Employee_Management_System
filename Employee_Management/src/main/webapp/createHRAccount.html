@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create HR Account</title>
+    <link rel="stylesheet" href="createHRAccount.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create HR Account</h1>
+        </header>
+        <main>
+            <form action="createHRAccountServlet" method="POST">
+                <label for="hrname">HR Name:</label>
+                <input type="text" id="hrname" name="hrname" required><br>
+                
+                <label for="hrid">HR ID:</label>
+                <input type="text" id="hrid" name="hrid"  max="9999" required><br>
+                
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" required><br>
+                
+                <label for="doj">Date of Joining:</label>
+                <input type="date" id="doj" name="doj" required><br>
+                
+                <label for="phone">Phone No:</label>
+                <input type="text" id="phone" name="phone" max="9999999999" required><br>
+                
+                <button type="submit">Create Account</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

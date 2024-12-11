@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.left-section h2 {
+    margin-top: 0;
+}
+
+.right-section {
+    background: #f9f9f9;
+}

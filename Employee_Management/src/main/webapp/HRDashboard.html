@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link rel="stylesheet" href="HRDashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>HR Details</h2>
+            <p>HR Name: <span id="hrName"></span></p>
+            <p>HR ID: <span id="hrID"></span></p>
+            <p>Department: <span id="department"></span></p>
+            <p>Date of Joining: <span id="doj"></span></p>
+            <p>Phone No.: <span id="phone"></span></p>
+        </div>
+        <div class="right-section">
+            <!-- Additional functionalities or options can go here -->
+        </div>
+    </div>
+    <script>
+        // Fetch HR details on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('HRDashboardServlet')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('hrName').textContent = data.hrName;
+                    document.getElementById('hrID').textContent = data.hrID;
+                    document.getElementById('department').textContent = data.department;
+                    document.getElementById('doj').textContent = data.doj;
+                    document.getElementById('phone').textContent = data.phone;
+                })
+                .catch(error => console.error('Error fetching HR details:', error));
+        });
+    </script>
+</body>
+</html>

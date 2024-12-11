@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  cursor: pointer;
+  width: 90px;
+  height: 50px;
+}
+
+header .company-name {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.box p {
+  font-size: 14px;
+  color: #333;
+}
+
+.box img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
